@@ -3,7 +3,7 @@
   "version": "1.4.1",
   "description": "Custom MUI components",
   "author": "Yuanzong Qiu <yz@createandlearn.us>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "sideEffects": false,
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
