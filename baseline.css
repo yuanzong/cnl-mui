@@ -1,0 +1,157 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+strong,
+b {
+  font-weight: bolder;
+}
+
+body {
+  margin: 0;
+  font: var(--mui-font-body1);
+  color: var(--mui-palette-text-primary);
+  background-color: var(--mui-palette-background-default);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media print {
+  body {
+    background-color: var(--mui-palette-common-white);
+  }
+}
+
+body::backdrop {
+  background-color: var(--mui-palette-background-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  font-size: 0.875em;
+  color: var(--mui-palette-text-secondary);
+  word-wrap: break-word;
+}
+a > code {
+  color: inherit;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em;
+}
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+iframe {
+  border: 0;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+a {
+  font-weight: 500;
+  -webkit-text-decoration: unset;
+  text-decoration: unset;
+}
+
+a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.MuiBox-root > p:last-child,
+.MuiBox-root > pre:last-child,
+.MuiBox-root > ul:last-child,
+.MuiBox-root > ol:last-child {
+  margin-bottom: 0;
+}
+
+.MuiTablePagination-toolbar > p {
+  margin-bottom: 0;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 2px solid rgba(13, 13, 13, 0.1);
+  margin: 2rem 0;
+}

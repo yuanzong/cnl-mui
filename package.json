@@ -1,0 +1,43 @@
+{
+  "name": "@yuanzong/mui",
+  "version": "1.4.0",
+  "description": "Custom MUI components",
+  "author": "Yuanzong Qiu <yz@createandlearn.us>",
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanzong/cnl-mui.git"
+  },
+  "files": [
+    "dist",
+    "baseline.css",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup --config",
+    "lint": "npx biome lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.7",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/react": "^19.2.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "rollup": "^4.53.3",
+    "tslib": "^2.8.1"
+  },
+  "peerDependencies": {
+    "@mui/icons-material": "^7.0.0",
+    "@mui/material": "^7.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
